@@ -28,7 +28,7 @@ jobs:
         
     - name: Sort API
       run: | 
-        python updaterand.py
+        python updateApi.py
         
     - name: Commit
       run: |
