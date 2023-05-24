@@ -57,8 +57,8 @@ jobs:
         rm -f keylist2.txt
     - name: Commit #上传新的refresh_token到仓库
       run: |
-        git config --global user.email UpdateToken@email.com
-        git config --global user.name UpdateToken
+        git config --global user.email AutoupdateRobot@email.com
+        git config --global user.name AutoupdateRobot
         git add .
         git commit -m "update new refresh_token" -a
     - name: Push changes
