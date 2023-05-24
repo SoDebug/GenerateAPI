@@ -40,12 +40,12 @@ jobs:
       run: | 
         echo $ID_LIST > idlist.txt
         echo $KEY_LIST > keylist.txt
-        sed -i '10 r idlist.txt' testapi.py
-        sed -i '11 r keylist.txt' testapi.py
+        sed -i '10 r idlist.txt' call.py
+        sed -i '11 r keylist.txt' call.py
         echo $ID_LIST2 > idlist2.txt
         echo $KEY_LIST2 > keylist2.txt
-        sed -i '12 r idlist2.txt' testapi.py
-        sed -i '13 r keylist2.txt' testapi.py
+        sed -i '12 r idlist2.txt' call.py
+        sed -i '13 r keylist2.txt' call.py
         
     - name: Call the API
       run: | 
