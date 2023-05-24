@@ -49,4 +49,4 @@ jobs:
         
     - name: Call the API
       run: | 
-        python testapi.py
+        python call.py
