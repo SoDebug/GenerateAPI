@@ -9,8 +9,6 @@ on:
 
   schedule:
     - cron: '18 18 * * *'
-  watch:
-    types: [started]
     
 jobs:
   build:
