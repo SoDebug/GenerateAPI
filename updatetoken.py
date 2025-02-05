@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import requests as req
 import json,sys,time,random
+import ast
 
 
 dd2=[1]
@@ -24,7 +25,7 @@ def gettoken(refresh_token):
           'redirect_uri':'http://localhost:53682/'
          }
     html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
-    jsontxt = json.loads(html.text)
+    jsontxt = ast.literal_eval(html.text)
     print(type(jsontxt))
     print(jsontxt['token_type'])
     print(jsontxt)
