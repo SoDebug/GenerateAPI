@@ -24,7 +24,6 @@ def gettoken(refresh_token):
           'redirect_uri':'http://localhost:53682/'
          }
     html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
-    print(str(html))
     jsontxt = json.loads(html.text)
     print(jsontxt)
     refresh_token = jsontxt['refresh_token']
